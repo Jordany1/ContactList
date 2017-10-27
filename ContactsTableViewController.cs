@@ -15,7 +15,7 @@ namespace ContactList
 
             contactList.Add(new Contact()
             {
-                Name = "abc",
+                Name = "Shrek",
                 Number = "123",
                 Location = "abc"
 
@@ -23,7 +23,7 @@ namespace ContactList
 
             contactList.Add(new Contact()
             {
-                Name = "abc",
+                Name = "Donald Trump",
                 Number = "123",
                 Location = "abc",
 
@@ -31,7 +31,7 @@ namespace ContactList
 
             contactList.Add(new Contact()
             {
-                Name = "abc",
+                Name = "Kim Jong Un",
                 Number = "123",
                 Location = "abc",
 
@@ -60,14 +60,33 @@ namespace ContactList
 
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
-            var cell = tableView.DequeueReusableCell("Contact");
+            var cell = tableView.DequeueReusableCell("Contact") as ContactTableViewCell;
 
             var data = contactList[indexPath.Row];
 
-            cell.TextLabel.Text = data.Name;
+            cell.ContactData = data;
 
             return cell;
         }
+
+        public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+        {
+            if (segue.Identifier == "DetailsSegue")
+            {
+                var navigationController = segue.DestinationViewController as DetailsViewController;
+
+                if (navigationController !=null)
+                {
+                    var rowPath = TableView.IndexPathForSelectedRow;
+                    var selectedData = contactList[rowPath.Row];
+                    navigationController.selectedContact = selectedData;
+                }
+            }
+                
+
+            base.PrepareForSegue(segue, sender);
+        }
+
     }
 
     public class Contact
@@ -75,5 +94,6 @@ namespace ContactList
         public string Name;
         public string Number;
         public string Location;
+        public string ImagePath;
     }
 }

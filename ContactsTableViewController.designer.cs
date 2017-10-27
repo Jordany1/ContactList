@@ -14,5 +14,8 @@ namespace ContactList
     [Register ("ContactsTableViewController")]
     partial class ContactsTableViewController
     {
+        void ReleaseDesignerOutlets ()
+        {
+        }
     }
 }
