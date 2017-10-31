@@ -16,32 +16,32 @@ namespace ContactList
             contactList.Add(new Contact()
             {
                 Name = "Shrek",
-                Number = "123",
-                Location = "abc"
+                Number = "403 225 9987",
+                Location = "Swamp"
 
             });
 
             contactList.Add(new Contact()
             {
                 Name = "Donald Trump",
-                Number = "123",
-                Location = "abc",
+                Number = "587 999 0492",
+                Location = "725 5th Ave, New York, NY 10022, USA",
 
             });
 
             contactList.Add(new Contact()
             {
                 Name = "Kim Jong Un",
-                Number = "123",
-                Location = "abc",
+                Number = "403 888 9999",
+                Location = "Pyongyang, North Korea",
 
             });
 
             contactList.Add(new Contact()
             {
-                Name = "abc",
-                Number = "123",
-                Location = "abc",
+                Name = "Barrack Obama",
+                Number = "587 000 2223",
+                Location = "1600 Pennsylvania Ave NW, Washington, DC 20500, USA",
 
             });
 
