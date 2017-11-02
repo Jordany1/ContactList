@@ -17,7 +17,8 @@ namespace ContactList
             {
                 Name = "Shrek",
                 Number = "403 225 9987",
-                Location = "Swamp"
+                Location = "Swamp",
+                ImagePath = "Images/Shrek.jpg"
 
             });
 
@@ -26,7 +27,8 @@ namespace ContactList
                 Name = "Donald Trump",
                 Number = "587 999 0492",
                 Location = "725 5th Ave, New York, NY 10022, USA",
-
+                ImagePath = "Images/Trump.jpg"
+                    
             });
 
             contactList.Add(new Contact()
@@ -34,6 +36,7 @@ namespace ContactList
                 Name = "Kim Jong Un",
                 Number = "403 888 9999",
                 Location = "Pyongyang, North Korea",
+                ImagePath = "Images/KimJongUn.jpg"
 
             });
 
@@ -42,6 +45,7 @@ namespace ContactList
                 Name = "Barrack Obama",
                 Number = "587 000 2223",
                 Location = "1600 Pennsylvania Ave NW, Washington, DC 20500, USA",
+                ImagePath = "ImagesObama.jpg"
 
             });
 

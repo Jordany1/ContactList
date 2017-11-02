@@ -114,5 +114,11 @@
       <DependentUpon>DetailsViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Images\KimJongUn.jpg" />
+    <BundleResource Include="Images\Trump.jpg" />
+    <BundleResource Include="Images\Obama.jpg" />
+    <BundleResource Include="Images\Shrek.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
